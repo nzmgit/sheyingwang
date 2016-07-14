@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>摄影网</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/liuying.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/nzm.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/ly.js"></script>
+</head>
+<body>
+<!--header部分-->
+<div class="header">
+    <div class="box top">
+        <a href="#" class="logo">旅游网</a>
+
+        <div class="header-s fr">
+            <div class="s-txt fl">
+                <input type="text" placeholder="全站搜索: 热门线路，活跃游侠，精华游记">
+            </div>
+            <div class="s-btn fl">
+                <a href="#" class="btn-a">搜索</a>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="box">
+            <ul class="nav-list fl">
+                <li class="home"><a href="#">总站</a></li>
+                <li class="active"><a href="#"> 摄影网</a></li>
+                <li><a href="#">国内摄影</a></li>
+                <li><a href="#">出境摄影</a></li>
+                <li><a href="#"> 华东摄影</a></li>
+                <li><a href="#"> 摄影作品 +</a></li>
+                <li><a href="#"> 游女郎 +</a></li>
+                <li><a href="#"> 摄影社区 +</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--header部分end-->
+<!--banner部分-start-->
+<div class="banner-wrap">
+    <div class="banner">
+        <!--********-->
+        <div class="slider">
+            <div class="bd">
+                <ul>
+                    <li><a target="_blank" href="#"><img src="images/banner01.jpg"/></a></li>
+                    <li><a target="_blank" href="#"><img src="images/banner02.jpg"/></a></li>
+                    <li><a target="_blank" href="#"><img src="images/banner03.jpg"/></a></li>
+                    <li><a target="_blank" href="#"><img src="images/banner04.jpg"/></a></li>
+                    <li><a target="_blank" href="#"><img src="images/banner05.jpg"/></a></li>
+                </ul>
+            </div>
+            <div class="hd">
+                <ul></ul>
+            </div>
+            <div class="pnBtn prev"><span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a></div>
+            <div class="pnBtn next"><span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a></div>
+        </div>
+
+        <script src="js/superslide.js"></script>
+        <script type="text/javascript">
+            jQuery(".slider .bd li").first().before(jQuery(".slider .bd li").last());
+            jQuery(".slider").hover(function () {
+                jQuery(this).find(".arrow").stop(true, true).fadeIn(300)
+            }, function () {
+                jQuery(this).find(".arrow").fadeOut(300)
+            });
+            jQuery(".slider").slide({
+                titCell: ".hd ul",
+                mainCell: ".bd ul",
+                effect: "leftLoop",
+                autoPlay: false,
+                vis: 2,
+                autoPage: true,
+                trigger: "click"
+            });    </script>
+        <!--********-->
+
+    </div>
+    <div class="box extra-warp">
+        <div class="extra">
+            <div class="rigister clearfix">
+                <a href="#" class="reg">注册</a>
+                <a href="#" class="login">登录</a>
+            </div>
+            <div class="topic clearfix">
+                <h3>主题旅游</h3>
+                <ul class="tp-lis">
+                    <li>·<a href="#">海岛摄影</a></li>
+                    <li>·<a href="#">霞浦摄影</a></li>
+                    <li>·<a href="#">古道传奇</a></li>
+                    <li>·<a href="#">春天花事</a></li>
+                    <li>·<a href="#">热浪海岛</a></li>
+                    <li>·<a href="#">欧洲旅游</a></li>
+                </ul>
+            </div>
+            <div class="share clearfix">
+
+                <div class="story"></div>
+                <a href="" class="weibo fl">新浪微博</a>
+                <a href="" class="weixin fl">腾讯微信
+                    <div class="qrcode" style="display: none">
+                        <img src="images/nweixin.gif" alt=""/>
+                        <p>微信扫描二维码，随时随地与游侠客亲密接触<br>精彩活动触手可得！</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="banner-b">
+            <div class="caption">
+                <p style="display: block;">2016游侠客“春天花事”摄影大赛火热上线！</p>
+
+                <p style="display: none;">2016非洲，马达加斯加-穆隆达瓦-安其拉贝-伊萨鲁-昂达西贝，动物天堂与人文深度12日摄影之旅</p>
+
+                <p style="display: none;">2016 色达摄影全年计划</p>
+
+                <p style="display: none;">5-7月新疆：赛里木湖-伊犁-琼库什台-喀拉峻草原-阔克苏大峡谷-巴音布鲁克-吐鲁番-库木塔格沙漠9日摄影</p>
+
+                <p style="display: none;">6-8月 环青海湖-门源油菜花-天境祁连-金沙湾-茶卡盐湖-贵德丹霞7日摄影</p>
+
+                <p style="display: none;">2016 广西桂林摄影创作团</p>
+
+                <p style="display: none;">6-8月 巴丹吉林沙漠-山丹军马场-七彩丹霞-冰沟丹霞-门源花海，壮美西北8日摄影创作</p>
+
+                <p style="display: none;">2016 捕加榜梯田最美光影，拍苗乡侗寨淳朴风情，大美黔东南7日风光、人文摄影创作团 </p>
+
+                <p style="display: none;">2016马来西亚，仙本那集合-马布岛-敦沙卡兰海洋公园-达纳湾岛-波黑杜朗岛，风下神域摄影7日</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!--banner部分-end-->
+<!--摄影作品欣赏-->
+<div class="photolist box">
+    <div class="hd clearfix">
+        <div class="p-title fl">
+            <h2>摄影作品</h2>
+        </div>
+        <div class="p-txt fr">
+            <a href="#">最新发表</a> | <a href="#">编辑推荐</a> | <a href="#">户外旅游</a> | <a href="#">风光摄影</a> | <a
+                href="#">人像摄影</a>
+            | <a href="#">人文纪实</a> | <a href="#">生态摄影</a> | <a href="#">更多</a>
+        </div>
+    </div>
+    <!--摄影图片展示-->
+    <div class="wrap clearfix">
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renxiang.jpg"></a>
+
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renxiang01.jpg">
+            </a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renxiang02.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renxiang03.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renxiang04.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renxiang05.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renxiang06.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/fengguang.jpg"></a>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/fengguang01.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/fengguang02.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/fengguang03.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/fengguang04.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/fengguang05.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/fengguang06.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renwen.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renwen01.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renwen02.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renwen03.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renwen04.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renwen05.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/renwen06.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/shengtai.jpg"></a>
+
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/shengtai01.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/shengtai02.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/shengtai03.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/shengtai04.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/shengtai05.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/shengtai06.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/qita.jpg"></a>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/qita01.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/qita02.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/qita03.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/qita04.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/qita05.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/qita06.jpg"></a>
+
+            <div class="title">梦境华，风吹草</div>
+            <div class="cover"></div>
+        </div>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/more.jpg"></a>
+        </div>
+    </div>
+
+</div>
+<!--摄影作品欣赏-end-->
+
+<!--liuying-box-->
+<div class="box">
+    <!--摄影线路开始-->
+    <div class="lines">
+        <div class="th clearfix">
+            <h2>
+                <span class="active">国内摄影</span>|
+                <span>出境摄影</span>|
+                <span>华东摄影</span>|
+                <span>华南摄影</span>|
+                <span>华北摄影</span>
+            </h2>
+
+            <p><a href="#">更多摄影活动</a></p>
+        </div>
+        <div class="tb">
+            <div class="main selected">
+                <div class="col one">
+                    <a href="#">
+                        <img src="images/inland_yunnan.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄云南】线路全面升级加料！游侠客专属行程！
+                        </div>
+                    </a>
+                </div>
+                <div class="col two">
+                    <a href="#">
+                        <img src="images/inland_lijiang.jpg" alt=""/>
+
+                        <div class="caption">
+                            【千湖山秘境摄影】5-6月 丽江花海子-千湖山碧沽天池-香格里拉花海秘境-梅里雪山7日摄影创作团!
+                        </div>
+                    </a>
+                </div>
+                <div class="col last">
+                    <a href="#">
+                        <img src="images/inland_guizhou.jpg" alt=""/>
+
+                        <div class="caption">
+                            【贵州摄影】2016 捕加榜梯田最美光影，拍苗乡侗寨淳朴风情，大美黔东南7日风光、人文摄影创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/inland_gannan.jpg" alt=""/>
+
+                        <div class="caption">
+                            【甘南摄影】7-8月 年宝玉则-九色甘南，8日藏地人景观创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/inland_guilin.jpg" alt=""/>
+
+                        <div class="caption">
+                            【桂林摄影】2016广西，龙脊梯田-会仙湿地-漓江渔火-黄布倒影-鱼鹰夜捕-兴坪佳境-阳朔风光，名师指导6日创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/inland_tantu.jpg" alt=""/>
+
+                        <div class="caption">
+                            【霞浦摄影】2016全年计划，摄中国最美滩涂，捕天下最赞光影
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/inland_tianshan.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄天山】5-7月新疆：赛里木湖-伊犁-琼库什台-喀拉峻草原-阔克苏大峡谷-巴音布鲁克-吐鲁番-库木塔格沙漠9日摄影
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/inland_fuguo.jpg" alt=""/>
+
+                        <div class="caption">
+                            【亚青寺+色达摄影】5-10月：佛国色达-秘境亚青寺-德格印经院-玉隆拉措-新都桥，川藏北线10日人文风光摄影环线！
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/inland_qinghai.jpg" alt=""/>
+
+                        <div class="caption">
+                            【青海摄影】6-8月 青海湖-浩门河谷风光带-门源油菜花-天境祁连-茶卡盐湖-贵德丹霞7日摄影采风团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/inland_ba.jpg" alt=""/>
+
+                        <div class="caption">
+                            【坝上夏日摄影】2016夏 坝上草原-西拉木伦河-金山岭长城 六日摄影创作团!
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/inland_hukou.jpg" alt=""/>
+
+                        <div class="caption">
+                            【秦晋摄影】4-11月，壶口瀑布--波浪谷--陕北安塞腰鼓--乾坤湾--山西碛口李家山，7日风光人文摄影创作团
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="col one">
+                    <a href="#">
+                        <img src="images/exit_1.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄云南】线路全面升级加料！游侠客专属行程！
+                        </div>
+                    </a>
+                </div>
+                <div class="col two">
+                    <a href="#">
+                        <img src="images/exit_2.jpg" alt=""/>
+
+                        <div class="caption">
+                            【千湖山秘境摄影】5-6月 丽江花海子-千湖山碧沽天池-香格里拉花海秘境-梅里雪山7日摄影创作团!
+                        </div>
+                    </a>
+                </div>
+                <div class="col last">
+                    <a href="#">
+                        <img src="images/exit_3.jpg" alt=""/>
+
+                        <div class="caption">
+                            【贵州摄影】2016 捕加榜梯田最美光影，拍苗乡侗寨淳朴风情，大美黔东南7日风光、人文摄影创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_4.jpg" alt=""/>
+
+                        <div class="caption">
+                            【甘南摄影】7-8月 年宝玉则-九色甘南，8日藏地人景观创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_5.jpg" alt=""/>
+
+                        <div class="caption">
+                            【桂林摄影】2016广西，龙脊梯田-会仙湿地-漓江渔火-黄布倒影-鱼鹰夜捕-兴坪佳境-阳朔风光，名师指导6日创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_6.jpg" alt=""/>
+
+                        <div class="caption">
+                            【霞浦摄影】2016全年计划，摄中国最美滩涂，捕天下最赞光影
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_7.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄天山】5-7月新疆：赛里木湖-伊犁-琼库什台-喀拉峻草原-阔克苏大峡谷-巴音布鲁克-吐鲁番-库木塔格沙漠9日摄影
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_8.jpg" alt=""/>
+
+                        <div class="caption">
+                            【亚青寺+色达摄影】5-10月：佛国色达-秘境亚青寺-德格印经院-玉隆拉措-新都桥，川藏北线10日人文风光摄影环线！
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_9.jpg" alt=""/>
+
+                        <div class="caption">
+                            【青海摄影】6-8月 青海湖-浩门河谷风光带-门源油菜花-天境祁连-茶卡盐湖-贵德丹霞7日摄影采风团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_10.jpg" alt=""/>
+
+                        <div class="caption">
+                            【坝上夏日摄影】2016夏 坝上草原-西拉木伦河-金山岭长城 六日摄影创作团!
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_11.jpg" alt=""/>
+
+                        <div class="caption">
+                            【秦晋摄影】4-11月，壶口瀑布--波浪谷--陕北安塞腰鼓--乾坤湾--山西碛口李家山，7日风光人文摄影创作团
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="col one">
+                    <a href="#">
+                        <img src="images/hua01.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄云南】线路全面升级加料！游侠客专属行程！
+                        </div>
+                    </a>
+                </div>
+                <div class="col two">
+                    <a href="#">
+                        <img src="images/hua02.jpg" alt=""/>
+
+                        <div class="caption">
+                            【千湖山秘境摄影】5-6月 丽江花海子-千湖山碧沽天池-香格里拉花海秘境-梅里雪山7日摄影创作团!
+                        </div>
+                    </a>
+                </div>
+                <div class="col last">
+                    <a href="#">
+                        <img src="images/hua03.jpg" alt=""/>
+
+                        <div class="caption">
+                            【贵州摄影】2016 捕加榜梯田最美光影，拍苗乡侗寨淳朴风情，大美黔东南7日风光、人文摄影创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/hua04.jpg" alt=""/>
+
+                        <div class="caption">
+                            【甘南摄影】7-8月 年宝玉则-九色甘南，8日藏地人景观创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/hua05.jpg" alt=""/>
+
+                        <div class="caption">
+                            【桂林摄影】2016广西，龙脊梯田-会仙湿地-漓江渔火-黄布倒影-鱼鹰夜捕-兴坪佳境-阳朔风光，名师指导6日创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/hua06.jpg" alt=""/>
+
+                        <div class="caption">
+                            【霞浦摄影】2016全年计划，摄中国最美滩涂，捕天下最赞光影
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/hua07.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄天山】5-7月新疆：赛里木湖-伊犁-琼库什台-喀拉峻草原-阔克苏大峡谷-巴音布鲁克-吐鲁番-库木塔格沙漠9日摄影
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="col one">
+                    <a href="#">
+                        <img src="images/exit_1.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄云南】线路全面升级加料！游侠客专属行程！
+                        </div>
+                    </a>
+                </div>
+                <div class="col two">
+                    <a href="#">
+                        <img src="images/exit_2.jpg" alt=""/>
+
+                        <div class="caption">
+                            【千湖山秘境摄影】5-6月 丽江花海子-千湖山碧沽天池-香格里拉花海秘境-梅里雪山7日摄影创作团!
+                        </div>
+                    </a>
+                </div>
+                <div class="col last">
+                    <a href="#">
+                        <img src="images/exit_3.jpg" alt=""/>
+
+                        <div class="caption">
+                            【贵州摄影】2016 捕加榜梯田最美光影，拍苗乡侗寨淳朴风情，大美黔东南7日风光、人文摄影创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_4.jpg" alt=""/>
+
+                        <div class="caption">
+                            【甘南摄影】7-8月 年宝玉则-九色甘南，8日藏地人景观创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_5.jpg" alt=""/>
+
+                        <div class="caption">
+                            【桂林摄影】2016广西，龙脊梯田-会仙湿地-漓江渔火-黄布倒影-鱼鹰夜捕-兴坪佳境-阳朔风光，名师指导6日创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_6.jpg" alt=""/>
+
+                        <div class="caption">
+                            【霞浦摄影】2016全年计划，摄中国最美滩涂，捕天下最赞光影
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_7.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄天山】5-7月新疆：赛里木湖-伊犁-琼库什台-喀拉峻草原-阔克苏大峡谷-巴音布鲁克-吐鲁番-库木塔格沙漠9日摄影
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_8.jpg" alt=""/>
+
+                        <div class="caption">
+                            【亚青寺+色达摄影】5-10月：佛国色达-秘境亚青寺-德格印经院-玉隆拉措-新都桥，川藏北线10日人文风光摄影环线！
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_9.jpg" alt=""/>
+
+                        <div class="caption">
+                            【青海摄影】6-8月 青海湖-浩门河谷风光带-门源油菜花-天境祁连-茶卡盐湖-贵德丹霞7日摄影采风团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_10.jpg" alt=""/>
+
+                        <div class="caption">
+                            【坝上夏日摄影】2016夏 坝上草原-西拉木伦河-金山岭长城 六日摄影创作团!
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/exit_11.jpg" alt=""/>
+
+                        <div class="caption">
+                            【秦晋摄影】4-11月，壶口瀑布--波浪谷--陕北安塞腰鼓--乾坤湾--山西碛口李家山，7日风光人文摄影创作团
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="col one">
+                    <a href="#">
+                        <img src="images/hua01.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄云南】线路全面升级加料！游侠客专属行程！
+                        </div>
+                    </a>
+                </div>
+                <div class="col two">
+                    <a href="#">
+                        <img src="images/hua02.jpg" alt=""/>
+
+                        <div class="caption">
+                            【千湖山秘境摄影】5-6月 丽江花海子-千湖山碧沽天池-香格里拉花海秘境-梅里雪山7日摄影创作团!
+                        </div>
+                    </a>
+                </div>
+                <div class="col last">
+                    <a href="#">
+                        <img src="images/hua03.jpg" alt=""/>
+
+                        <div class="caption">
+                            【贵州摄影】2016 捕加榜梯田最美光影，拍苗乡侗寨淳朴风情，大美黔东南7日风光、人文摄影创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/hua04.jpg" alt=""/>
+
+                        <div class="caption">
+                            【甘南摄影】7-8月 年宝玉则-九色甘南，8日藏地人景观创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/hua05.jpg" alt=""/>
+
+                        <div class="caption">
+                            【桂林摄影】2016广西，龙脊梯田-会仙湿地-漓江渔火-黄布倒影-鱼鹰夜捕-兴坪佳境-阳朔风光，名师指导6日创作团
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/hua06.jpg" alt=""/>
+
+                        <div class="caption">
+                            【霞浦摄影】2016全年计划，摄中国最美滩涂，捕天下最赞光影
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/hua07.jpg" alt=""/>
+
+                        <div class="caption">
+                            【行摄天山】5-7月新疆：赛里木湖-伊犁-琼库什台-喀拉峻草原-阔克苏大峡谷-巴音布鲁克-吐鲁番-库木塔格沙漠9日摄影
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--摄影线路结束-->
+    <!--notes start-->
+    <div class="notes">
+        <div class="article">
+            <div class="th clearfix">
+                <h2>
+                    <span>摄影游记</span>
+                </h2>
+
+                <p><a href="#">更多</a></p>
+            </div>
+            <div class="tb">
+                <div class="content">
+                    <div class="col"><img src="images/notes_1.jpg" alt=""/></div>
+                    <p class="title">
+                        <a href="#">【斯里兰卡】你在那里，我如期而至。</a>
+                    </p>
+
+                    <p>
+                        <span><a href="#">刘不灵</a></span>&nbsp;-
+                        &nbsp;&nbsp;<span class="num">660 </span>&nbsp;-
+                        <span class="num">55</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="col"><img src="images/notes_2.jpg" alt=""/></div>
+                    <p class="title">
+                        <a href="#">【千湖山秘境】蔚蓝星球上的最后一片净土</a>
+                    </p>
+
+                    <p>
+                        <span><a href="#">光音</a></span>&nbsp;-
+                        &nbsp;&nbsp;<span class="num">1103 </span>&nbsp;-
+                        <span class="num">81</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="col"><img src="images/notes_3.jpg" alt=""/></div>
+                    <p class="title">
+                        <a href="#">【千湖山秘境摄影】2016首发归来！</a>
+                    </p>
+
+                    <p>
+                        <span><a href="#">昊东</a></span>&nbsp;-
+                        &nbsp;&nbsp;<span class="num">708 </span>&nbsp;-
+                        <span class="num">50</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="col"><img src="images/notes_4.jpg" alt=""/></div>
+                    <p class="title">
+                        <a href="#">去林芝，艳遇西藏的春天</a>
+                    </p>
+
+                    <p>
+                        <span><a href="#">东林党人</a></span>&nbsp;-
+                        &nbsp;&nbsp;<span class="num">1907 </span>&nbsp;-
+                        <span class="num">105</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="col"><img src="images/notes_5.jpg" alt=""/></div>
+                    <p class="title">
+                        <a href="#">新疆，一个被自己美到的地方</a>
+                    </p>
+
+                    <p>
+                        <span><a href="#">小海</a></span>&nbsp;-
+                        &nbsp;&nbsp;<span class="num">2856 </span>&nbsp;-
+                        <span class="num">104</span>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="col"><img src="images/notes_6.jpg" alt=""/></div>
+                    <p class="title">
+                        <a href="#">我家住在黄土高坡，大风从坡上刮过——秦晋</a>
+                    </p>
+
+                    <p>
+                        <span><a href="#">子云猫猫咪</a></span>&nbsp;-
+                        &nbsp;&nbsp;<span class="num">2620 </span>&nbsp;-
+                        <span class="num">184</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="aside">
+            <div class="mod">
+                <div class="hd">
+                    <h2>热门摄影游记</h2>
+                </div>
+                <div class="tip">
+                    <ul>
+                        <li><a href="#">1. 【斯里兰卡】你在那里，我如期而至。</a></li>
+                        <li><a href="#">2. 【千湖山秘境】蔚蓝星球上的最后一片净土(0522首发摄影团）</a></li>
+                        <li><a href="#">3. 【千湖山秘境摄影】2016首发归来！</a></li>
+                        <li><a href="#">4. 去林芝，艳遇西藏的春天</a></li>
+                        <li><a href="#">5. 浪漫本州，原宿日本</a></li>
+                        <li><a href="#">6. 《行摄黔东南》4月30 – 5月6日比赛专线B团</a></li>
+                        <li><a href="#">7. 新疆，一个被自己美到的地方</a></li>
+                        <li><a href="#">8. 我家住在黄土高坡，大风从坡上刮过——秦晋摄影全年首发</a></li>
+                        <li><a href="#">9. 当灵魂和身体都在路上，从色达到亚青。</a></li>
+                        <li><a href="#">10. 【愿有岁月可回首，且以深情到白头】东林新疆早春摄影团</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod" style="padding-top: 15px">
+                <div class="hd">
+                    <h2>精彩行行摄摄</h2>
+                </div>
+                <div class="tip">
+                    <ul>
+                        <li><a href="#">1. 3.23游侠客樱花和服外拍【花开の季节有点甜】</a></li>
+                        <li><a href="#">2. 冰雪·醉美黄山</a></li>
+                        <li><a href="#">3. 航拍那些事-灵峰探梅</a></li>
+                        <li><a href="#">4. 那年的 黄山雪景</a></li>
+                        <li><a href="#">5. 【厦门】辞职后第一个想到要去的地方</a></li>
+                        <li><a href="#">6. 2015.8.23下涯行摄之【小女墨漓】</a></li>
+                        <li><a href="#">7. 2015 小东江雾歌（和游侠客去创作）</a></li>
+                        <li><a href="#">8. 最后的驯鹿牧民</a></li>
+                        <li><a href="#">9. 婺源查平坦——一个山村小学的坚守</a></li>
+                        <li><a href="#">10. 团圆的温度。</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--notes end-->
+    <!--banner start-->
+    <div class="banner_02">
+        <a href="#">
+            <img src="images/banner_2.jpg" alt=""/>
+        </a>
+
+    </div>
+    <!--banner end-->
+    <!--girl start-->
+    <div class="girls">
+        <div class="th clearfix">
+            <h2><span>游女郎</span>&nbsp;<a href="#">【颜值大碰撞】游女郎第三季火热招聘中！</a></h2>
+            <a href="#" class="fr">更多</a>
+        </div>
+        <div class="tb">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/girl_1.jpg" alt=""/>
+                        <div class="name">YoYo</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/girl_2.jpg" alt=""/>
+                        <div class="name">洛颜</div>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/girl_3.jpg" alt=""/>
+
+                    <div class="name">笨娜娜</div>
+                </a></li>
+                <li><a href="#"><img src="images/girl_4.jpg" alt=""/>
+
+                    <div class="name">小小婧</div>
+                </a></li>
+                <li><a href="#"><img src="images/girl_5.jpg" alt=""/>
+
+                    <div class="name">可可</div>
+                </a></li>
+                <li>
+                    <a href="#"><img src="images/girl_6.jpg" alt=""/>
+                        <div class="name">可可</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/girl_7.jpg" alt=""/>
+                        <div class="name">可可</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/girl_9.jpg" alt=""/>
+                        <div class="name">可可</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/girl_1.jpg" alt=""/>
+                        <div class="name">YoYo</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/girl_2.jpg" alt=""/>
+                        <div class="name">洛颜</div>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/girl_3.jpg" alt=""/>
+
+                    <div class="name">笨娜娜</div>
+                </a></li>
+                <li><a href="#"><img src="images/girl_4.jpg" alt=""/>
+
+                    <div class="name">小小婧</div>
+                </a></li>
+                <li><a href="#"><img src="images/girl_5.jpg" alt=""/>
+
+                    <div class="name">可可</div>
+                </a></li>
+
+            </ul>
+            <div id="arr">
+                <a href="javascript:" class="prev"></a>
+                <a href="javascript:" class="next"></a>
+            </div>
+        </div>
+    </div>
+    <!--girl end-->
+</div>
+<!--liuying-box-end-->
+<!--摄影技巧教程-->
+<div class="teach box clearfix">
+    <div class="hd clearfix">
+        <div class="p-title fl">
+            <h2>摄影技巧教程</h2>
+        </div>
+        <div class="p-txt teach-more fr">
+            <a href="#">更多</a>
+        </div>
+    </div>
+    <div class="l-con fl clearfix">
+        <div class="col clearfix">
+            <a class="fl" style="color: #777;" href="#" target="_blank" title="除去色彩的干扰，爱上黑白相片的几大原因 ">
+                <img src="images/pic1.jpg"></a>
+
+            <div class="summary fl">
+                <a class="st" href="">除去色彩的干扰，爱上黑白相片的几大原因</a>
+                <a class="detail" href="">黑白相片的恒久价值，突显形状、线条、模式，让你注意构图，让相片意思能透过光影、主体互动等构像素表达，更注意光线的变化</a>
+            </div>
+        </div>
+        <div class="col clearfix">
+            <a class="fl" style="color: #777;" href="#" target="_blank" title="除去色彩的干扰，爱上黑白相片的几大原因 ">
+                <img src="images/pic3.jpg"></a>
+
+            <div class="summary fl">
+                <a class="st" href="">人人都是摄影师，你如何突出重围</a>
+                <a class="detail"
+                   href="">如同我们自己常说的，似乎只要手上有相机，就可以称自己是专业摄影师。摄影普及化，这对于职业摄影师的冲击非常大，职业摄影师到底该如何突出重围展现出自己的价值</a>
+            </div>
+        </div>
+        <div class="col clearfix">
+            <a class="fl" style="color: #777;" href="#" target="_blank" title="除去色彩的干扰，爱上黑白相片的几大原因 ">
+                <img src="images/pic4.jpg"></a>
+
+            <div class="summary fl">
+                <a class="st" href="">拍出不一样的人像</a>
+                <a class="detail" href="">日本摄影师一向很了解自己的资源是什么，所以利用高纬度的阳光和干净的环境，创造出所谓的日系风格。换个角度去思考，可以拍出自己的影像，这里分享几个外拍技巧，帮你拍出不一样的感觉。</a>
+            </div>
+        </div>
+        <div class="col clearfix">
+            <a class="fl" style="color: #777;" href="#" target="_blank" title="除去色彩的干扰，爱上黑白相片的几大原因 ">
+                <img src="images/pic5.jpg"></a>
+
+            <div class="summary fl">
+                <a class="st" href="">讨厌！每天朋友圈里总有那么一群人在晒美食！</a>
+                <a class="detail" href="">拍美食人人都喜欢，虽然大光圈拍出来的虚化效果非常讨喜，但用在美食摄影上，却似乎不是这么一回事，有时光圈太大导致景深太浅，反而毁了一张好照片。那么该如何拍美食呢？</a>
+            </div>
+        </div>
+    </div>
+    <div class="r-con fr">
+        <a href="3"><img src="images/pic2.jpg" alt=""/></a>
+    </div>
+</div>
+<!--全年计划-->
+<div class="pain box">
+    <a href="3"><img src="images/pain.jpg" alt=""/></a>
+</div>
+<!--版权部分-->
+<div class="footer">
+    <div class="friendlinks">
+        <a>友情链接:</a>
+        <a href="#" title="51YOU旅游网" target="_blank">51YOU旅游网</a>
+        <a href="#" title="雪乡摄影" target="_blank">雪乡摄影</a>
+        <a href="#" title="罗平油菜花" target="_blank">罗平油菜花</a>
+        <a href="#" title="普者黑摄影" target="_blank">普者黑摄影</a>
+        <a href="#" title="大连旅行社" target="_blank">大连旅行社</a>
+    </div>
+    <div class="aboutus">
+        <a href="#" target="_blank">关于游侠客</a>
+        <a href="#" target="_blank">游侠客的故事</a>
+        <a href="#" target="_blank">联系游侠客</a>
+        <a href="#" target="_blank">游侠客招聘</a>
+        <a href="#" target="_blank">意见反馈</a>
+        <a href="#" target="_blank">使用协议</a>
+        <a href="#" target="_blank">隐私政策</a>
+        <a href="#" target="_blank">交换链接</a>
+        <a href="#" target="_blank">帮助中心</a>
+    </div>
+    <div class="copyright">
+        ICP经营许可证：&nbsp;&nbsp;浙 ICP 备&nbsp;&nbsp;09011712 号-1 &nbsp;&nbsp;|&nbsp;&nbsp;营业执照&nbsp;&nbsp;|&nbsp;&nbsp;杭州游侠客旅行社有限公司&nbsp;&nbsp;杭州途游电子商务有限公司&nbsp;&nbsp;许可证编号：L-ZJ-CJ00161&nbsp;&nbsp;浙公网安备&nbsp;&nbsp;33010602002114号
+    </div>
+    <div class="safety">
+        <img src="images/safety.png" alt=""/>
+    </div>
+</div>
+</body>
+</html>
