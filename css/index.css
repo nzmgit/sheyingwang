@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 .header {
     background-color: #2d2d2d;
 }
@@ -20,7 +19,6 @@
 .header .header-s {
     padding-top: 24px;
     height: 32px;
-
 }
 
 .header .s-txt {
@@ -78,6 +76,7 @@
 }
 
 /*导航部分*/
+
 /*轮播图*/
 
 .slider {
@@ -213,7 +212,6 @@
     background: url(../images/slider-control.png) -31px center no-repeat;
     opacity: 0.6;
     filter: alpha(opacity=60);
-
 }
 
 /*轮播图end*/
@@ -272,7 +270,8 @@
     margin-bottom: 45px;
 }
 
-.banner-wrap .topic a:hover, .banner-wrap .share a:hover {
+.banner-wrap .topic a:hover,
+.banner-wrap .share a:hover {
     color: #e71f19;
     text-decoration: underline;
 }
@@ -280,7 +279,6 @@
 .banner-wrap .story {
     width: 125px;
     height: 20px;
-
     margin-bottom: 20px;
     background-image: url("../images/home.png");
     background-position: -213px -8px;
@@ -357,7 +355,6 @@
     height: 45px;
     position: absolute;
     bottom: 0;
-
     opacity: .8;
     filter: alpha(opacity=80);
     background-color: #000;
@@ -453,7 +450,262 @@
     display: none;
 }
 
+/*line start*/
+.lines {
+    margin-bottom: 50px;
+}
+
+.lines .th {
+    margin-bottom: 20px;
+}
+
+.th h2 {
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+    float: left;
+}
+
+.th p {
+    padding-top: 8px;
+    float: right;
+}
+
+.th a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+.lines .active {
+    background: #e99605;
+    color: white;
+}
+
+.lines .tb {
+    margin-right: -15px;
+    overflow: hidden;
+}
+
+.lines .tb .main {
+    display: none;
+}
+
+.lines .tb .selected {
+    display: block;
+}
+
+.lines .tb .col {
+    float: left;
+    margin-top: 12px;
+    margin-right: 12px;
+    position: relative;
+}
+
+.lines .tb .one {
+    margin-right: 12px;
+    width: 291px;
+    height: 298px;
+    overflow: hidden;
+}
+
+.lines .tb .two {
+    margin-right: 12px;
+    width: 594px;
+    height: 298px;
+}
+
+.lines .tb .last {
+    margin-right: 0;
+    width: 291px;
+    height: 298px;
+    overflow: hidden;
+}
+
+.lines .tb .caption {
+    width: 100%;
+    height: 30px;
+    line-height: 32px;
+    color: white;
+    background: #000;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+/*line end*/
+
+/*notes start*/
+
+.notes .article {
+    float: left;
+    width: 898px;
+}
+
+.notes .th {
+    margin-bottom: 19px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000;
+}
+
+.notes .tb {
+
+    /*overflow: hidden;*/
+    margin-right: -15px;
+}
+
+.notes .content {
+    float: left;
+    margin-bottom: 20px;
+    width: 289px;
+    margin-right: 15px;
+}
+
+.col img:hover {
+    transform: scale(1.05);
+}
+
+.notes .content .title {
+    width: 289px;
+    padding: 0 10px 0 0;
+    margin: 18px 0 6px 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.notes .content .num {
+    padding-left: 22px;
+}
+
+.notes .aside {
+    float: right;
+}
+
+.notes .aside .mod {
+    margin-bottom: 30px;
+}
+
+.notes .aside .hd {
+    margin-bottom: 19px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000
+}
+
+.notes .aside h2 {
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+.notes .aside .tip {
+    width: 272px;
+}
+
+.notes .aside ul {
+    padding-right: 30px;
+}
+
+.aside .tip li {
+    line-height: 18px;
+    padding: 2px 0 6px 2px;
+}
+
+.aside .tip a {
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/*notes end*/
+
+/*banner start*/
+
+.banner_02 {
+    margin-bottom: 40px;
+}
+
+/*banner end*/
+
+/*girls  start*/
+.girls .th {
+    margin-bottom: 24px;
+}
+
+.girls ul {
+
+    /*overflow: hidden;*/
+
+    /*margin-right: -5px;*/
+    width: 4000px;
+    position: relative;    /*left: -2651px;*/
+}
+
+.girls .tb {
+    overflow: hidden;
+    position: relative;
+}
+
+.girls .tb li {
+    width: 236px;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+}
+
+.girls .tb .name {
+    position: absolute;
+    bottom: 10%;
+    left: 5px;
+    padding: 4px 10px;
+    background: black;
+    width: 100px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: white;
+    display: none;
+}
+
+.girls .tb .prev,
+.girls .tb .next {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+}
+
+.girls .tb .prev {
+    left: 20px;
+    background: url(../images/photo_control.png) no-repeat 0 center;
+}
+
+.girls .tb .next {
+    right: 20px;
+    background: url(../images/photo_control.png) no-repeat -40px center;
+}
+
+/*girls  end*/
+
 /*摄影作品-end*/
+
 .teach .l-con {
     width: 910px;
     margin-top: 20px;
@@ -468,7 +720,6 @@
 
 .teach .r-con {
     width: 272px;
-
     background-color: red;
     margin-top: 20px;
 }
@@ -518,7 +769,8 @@
     color: #a6a6a6;
 }
 
-.footer .aboutus, .footer .copyright {
+.footer .aboutus,
+.footer .copyright {
     padding-top: 6px;
 }
 
