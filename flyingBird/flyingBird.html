@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #game {
+            width: 800px;
+            height: 600px;
+            margin:0 auto;
+            border: 1px solid #000;
+            background: url(images/sky.png);
+            overflow: hidden;
+            position: relative;
+        }
+
+        #game .pipeD {
+            background: url(images/pipe1.png) top center;
+            position: absolute;
+        }
+
+        #game .pipeU {
+            background: url(images/pipe2.png) bottom center;
+            position: absolute;
+        }
+
+        #bird {
+            width: 34px;
+            height: 25px;
+            /*border-radius: 10px;*/
+            /*background-color: red;*/
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background: url(images/birds.png) -8px -10px no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+<div id="game">
+    <div id="bird"></div>
+</div>
+<script>
+    var game = document.getElementById("game");
+    var birdEle = document.getElementById("bird");
+    var gameover = false;
+    var g = 1;
+    //天空对象
+    var sky = {
+        position: 0
+    }
+    //小鸟对象
+    var bird = {
+        entity: birdEle,
+        speedX: 5,
+        speedY: 0,
+        x: birdEle.offsetLeft,
+        y: birdEle.offsetTop
+    }
+
+    //移动背景
+    setInterval(function () {
+                //背景和鸟移动
+                if (!gameover) {
+                    sky.position = sky.position - bird.speedX;
+                    game.style.backgroundPositionX = sky.position + "px";
+
+                    //小鸟竖直方向移动
+                    bird.speedY += g;
+                    var step = bird.speedY;
+                    // leader=leader+step
+                    bird.y = bird.y + step;
+
+                    bird.entity.style.top = bird.y + "px";
+
+                    if (bird.y < 0) {
+                        bird.y = 0;
+                        gameover = true;
+                    }
+
+                    if (bird.y > game.offsetHeight - birdEle.offsetHeight) {
+                        bird.y = game.offsetHeight - birdEle.offsetHeight;
+                        gameover = true;
+                    }
+                    //判断完之后再执行一次操作
+                    bird.entity.style.top = bird.y + "px";
+                }
+            }, 25)
+
+    //创建管子
+    function Pipe(positionX) {
+        this.x = positionX;
+        this.width = 52;
+        //上管子
+        this.upPipeY = 0;
+        this.upPipeHeight = parseInt((Math.random() * 175 + 100));
+
+        var upDiv = document.createElement("div");
+        upDiv.className = "pipeU";
+        upDiv.style.width = this.width + "px";
+        upDiv.style.height = this.upPipeHeight + "px";
+        upDiv.style.left = this.x + "px";
+        upDiv.style.top = this.upPipeY + "px";
+        game.appendChild(upDiv);
+
+        //下管子
+        this.downPipeY = this.upPipeHeight + 200;
+        this.downPipeHeight = 600 - this.downPipeY;
+
+        var downDiv = document.createElement("div");
+        downDiv.className = "pipeD";
+        downDiv.style.top = this.downPipeY + "px";
+        downDiv.style.left = this.x + "px";
+        downDiv.style.width = this.width + "px";
+        downDiv.style.height = this.downPipeHeight + "px";
+        game.appendChild(downDiv);
+        var that = this;
+        setInterval(function () {
+            that.x = that.x - 1;
+            if (that.x < -52) {
+                that.x = 800;
+            }
+            if (!gameover) {
+                upDiv.style.left = that.x + "px";
+                downDiv.style.left = that.x + "px";
+            }
+            var downCrash = (bird.x + 34 > that.x) && (bird.x < that.x + 52) && (bird.y + 25 > that.downPipeY);
+            var upCrash = (bird.x + 34 > that.x) && (bird.x < that.x + 52) && (bird.y < that.upPipeHeight);
+            if (downCrash || upCrash) {
+                gameover = true;
+            }
+
+        }, 10)
+    }
+
+
+    for (var i = 0; i < 4; i++) {
+        new Pipe(400 + 200 * i);
+    }
+
+    document.onclick = function () {
+        bird.speedY = -10;
+    }
+</script>
+</body>
+</html>
