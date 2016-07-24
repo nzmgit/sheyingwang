@@ -1,8 +1,8 @@
 /**
  * Created by tao on 2015/6/17.
  */
-//导航效果
 $(function() {
+    //导航效果
     $(".nav-list li").mouseenter(function() {
         $(this).addClass("active").siblings().removeClass("active");
     });
@@ -49,7 +49,7 @@ $(function() {
             "opacity": "1"
         }, 500)
     });
-    //girl 进入事件
+    //游女郎部分
     $(".girls li a").mouseenter(function() {
         $(this).css("opacity", "0.7");
         //$(this).children("div").css("display","block");
@@ -72,10 +72,6 @@ $(function() {
     });
 
     var ul = $(".girls ul")[0];
-    //var firstLi = $(".girls li").clone(true);
-    //$(".girls ul").prepend(firstLi);
-    /*var $lastLi= $(".girls ul .last").clone(true);
-     ul.appendChild($lastLi[0]);*/
     var length = ul.children.length;
     var pic = 0;
     var left = $(".girls .prev")[0];
@@ -84,15 +80,10 @@ $(function() {
     var box = $(".box")[0];
     left.onclick = function() {
         clearInterval(timer);
-        /* if (pic === 0) {
-         ul.style.left = -liNum * ( liWidth+5) + "px";
-         pic = liNum+1;
-         }*/
         if (pic === 0) {
             ul.style.left = -(length - 5) * (liWidth + 5) + "px";
             pic = length - 5;
         }
-
         pic--;
         //目标 和 pic有关 和 图片宽度有关 而且是负数
         var target = -pic * (liWidth + 5);
@@ -101,7 +92,6 @@ $(function() {
     right.onclick = function() {
         clearInterval(timer);
         playNext();
-
     };
     ul.onmouseover = function() {
         clearInterval(timer);
@@ -119,7 +109,6 @@ $(function() {
          ul.style.left = 0 + "px";
          pic = -1;
          }*/
-
         if (pic === length - 5) {
             ul.style.left = 0;
             pic = 0;
