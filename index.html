@@ -14,6 +14,7 @@
 <div class="header">
     <div class="box top">
         <a href="#" class="logo">旅游网</a>
+
         <div class="header-s fr">
             <div class="s-txt fl">
                 <input type="text" placeholder="全站搜索: 热门线路，活跃游侠，精华游记">
@@ -100,6 +101,7 @@
                 <a href="" class="weixin fl">腾讯微信
                     <div class="qrcode" style="display: none">
                         <img src="images/nweixin.gif" alt=""/>
+
                         <p>微信扫描二维码，随时随地与游侠客亲密接触<br>精彩活动触手可得！</p>
                     </div>
                 </a>
@@ -142,210 +144,74 @@
         </div>
     </div>
     <!--摄影图片展示-->
-    <div class="wrap clearfix">
+    <div class="wrap clearfix"></div>
+    <script id="messages" type="text/template">
+        <% for(i=0; i< list.length; i++) { %>
+             <% var singleLi=list[i]; %>
+        <% if (i===0 || i===7 || i===14 || i===21 || i===27 || i===28 || i===35){ %>
+            <div class="col">
+                <a href="#" target="_blank"><img src="images/<%= singleLi["pic"] %>"></a>
+            </div>
+        <% } else {%>
         <div class="col">
-            <a href="#" target="_blank"><img src="images/renxiang.jpg"></a>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renxiang01.jpg">
-            </a>
-
-            <div class="title">梦境华，风吹草</div>
+            <a href="#" target="_blank"><img src="images/<%= singleLi["pic"] %>"></a>
+            <div class="title"><%= singleLi["word"] %></div>
             <div class="cover"></div>
         </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renxiang02.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renxiang03.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renxiang04.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renxiang05.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renxiang06.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/fengguang.jpg"></a>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/fengguang01.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/fengguang02.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/fengguang03.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/fengguang04.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/fengguang05.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/fengguang06.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renwen.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renwen01.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renwen02.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renwen03.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renwen04.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renwen05.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/renwen06.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/shengtai.jpg"></a>
-
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/shengtai01.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/shengtai02.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/shengtai03.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/shengtai04.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/shengtai05.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/shengtai06.jpg"></a>
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/qita.jpg"></a>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/qita01.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/qita02.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/qita03.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/qita04.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/qita05.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/qita06.jpg"></a>
-
-            <div class="title">梦境华，风吹草</div>
-            <div class="cover"></div>
-        </div>
-        <div class="col">
-            <a href="#" target="_blank"><img src="images/more.jpg"></a>
-        </div>
-    </div>
+        <% } %>
+        <% } %>
+    </script>
+    <!-- 引入artTemplate模板引擎 -->
+    <script src="js/template-native.js"></script>
+    <script>
+        //数据
+        var datas = {
+            //人像
+            list: [{ "pic": "renxiang.jpg" },
+                { "pic": "renxiang01.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renxiang02.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renxiang03.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renxiang04.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renxiang05.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renxiang06.jpg", "word": "梦境华，风吹草" },
+                //风光
+                { "pic": "fengguang.jpg" },
+                { "pic": "fengguang01.jpg", "word": "梦境华，风吹草" },
+                { "pic": "fengguang02.jpg", "word": "梦境华，风吹草" },
+                { "pic": "fengguang03.jpg", "word": "梦境华，风吹草" },
+                { "pic": "fengguang04.jpg", "word": "梦境华，风吹草" },
+                { "pic": "fengguang05.jpg", "word": "梦境华，风吹草" },
+                { "pic": "fengguang06.jpg", "word": "梦境华，风吹草" },
+                //人文
+                { "pic": "renwen.jpg" },
+                { "pic": "renwen01.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renwen02.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renwen03.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renwen04.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renwen05.jpg", "word": "梦境华，风吹草" },
+                { "pic": "renwen06.jpg", "word": "梦境华，风吹草" },
+                //生态
+                { "pic": "shengtai.jpg" },
+                { "pic": "shengtai01.jpg", "word": "梦境华，风吹草" },
+                { "pic": "shengtai02.jpg", "word": "梦境华，风吹草" },
+                { "pic": "shengtai03.jpg", "word": "梦境华，风吹草" },
+                { "pic": "shengtai04.jpg", "word": "梦境华，风吹草" },
+                { "pic": "shengtai05.jpg", "word": "梦境华，风吹草" },
+                { "pic": "shengtai06.jpg", "word": "梦境华，风吹草" },
+                //其他
+                { "pic": "qita.jpg" },
+                { "pic": "qita01.jpg", "word": "梦境华，风吹草" },
+                { "pic": "qita02.jpg", "word": "梦境华，风吹草" },
+                { "pic": "qita03.jpg", "word": "梦境华，风吹草" },
+                { "pic": "qita04.jpg", "word": "梦境华，风吹草" },
+                { "pic": "qita05.jpg", "word": "梦境华，风吹草" },
+                { "pic": "qita06.jpg", "word": "梦境华，风吹草" },
+                //更多
+                { "pic": "more.jpg" }]
+        };
+        var html = template('messages', datas);
+        $(".photolist .wrap").html(html);
+    </script>
 
 </div>
 <!-- 摄影作品欣赏-end -->
@@ -361,6 +227,7 @@
                 <span>华南摄影</span>|
                 <span>华北摄影</span>
             </h2>
+
             <p><a href="#">更多摄影活动</a></p>
         </div>
         <div class="tb">
@@ -952,11 +819,13 @@
                 <li>
                     <a href="#">
                         <img src="images/girl_1.jpg" alt=""/>
+
                         <div class="name">YoYo</div>
                     </a>
                 </li>
                 <li>
                     <a href="#"><img src="images/girl_2.jpg" alt=""/>
+
                         <div class="name">洛颜</div>
                     </a>
                 </li>
@@ -974,27 +843,32 @@
                 </a></li>
                 <li>
                     <a href="#"><img src="images/girl_6.jpg" alt=""/>
+
                         <div class="name">可可</div>
                     </a>
                 </li>
                 <li>
                     <a href="#"><img src="images/girl_7.jpg" alt=""/>
+
                         <div class="name">可可</div>
                     </a>
                 </li>
                 <li>
                     <a href="#"><img src="images/girl_9.jpg" alt=""/>
+
                         <div class="name">可可</div>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="images/girl_1.jpg" alt=""/>
+
                         <div class="name">YoYo</div>
                     </a>
                 </li>
                 <li>
                     <a href="#"><img src="images/girl_2.jpg" alt=""/>
+
                         <div class="name">洛颜</div>
                     </a>
                 </li>
@@ -1034,6 +908,7 @@
         <div class="col clearfix">
             <a class="fl" style="color: #777;" href="#" target="_blank" title="除去色彩的干扰，爱上黑白相片的几大原因 ">
                 <img src="images/pic1.jpg"></a>
+
             <div class="summary fl">
                 <a class="st" href="">除去色彩的干扰，爱上黑白相片的几大原因</a>
                 <a class="detail" href="">黑白相片的恒久价值，突显形状、线条、模式，让你注意构图，让相片意思能透过光影、主体互动等构像素表达，更注意光线的变化</a>

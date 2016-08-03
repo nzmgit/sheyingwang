@@ -118,4 +118,5 @@ $(function() {
         var target = -pic * (liWidth + 5);
         animate(ul, target);
     }
+
 });
