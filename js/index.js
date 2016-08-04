@@ -2,6 +2,24 @@
  * Created by tao on 2015/6/17.
  */
 $(function() {
+    //ajax
+    $.ajax({
+        type: "GET",
+        url: "ajax/message.json",
+        dataType: "json",
+        success: function (datas) {
+            var html = template('messages', datas);
+            //console.log(datas);
+            $(".photolist .wrap").html(html);
+            //鼠标经过图片特效
+            $(".wrap .col").mouseenter(function() {
+                $(this).find("div").stop().fadeIn(300);
+            });
+            $(".wrap .col").mouseleave(function() {
+                $(this).find("div").stop().fadeOut(300);
+            });
+        }
+    });
     //导航效果
     $(".nav-list li").mouseenter(function() {
         $(this).addClass("active").siblings().removeClass("active");

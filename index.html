@@ -76,7 +76,8 @@
                 vis: 2,
                 autoPage: true,
                 trigger: "click"
-            });    </script>
+            });
+        </script>
     </div>
     <div class="box extra-warp">
         <div class="extra">
@@ -147,11 +148,11 @@
     <div class="wrap clearfix"></div>
     <script id="messages" type="text/template">
         <% for(i=0; i< list.length; i++) { %>
-             <% var singleLi=list[i]; %>
-        <% if (i===0 || i===7 || i===14 || i===21 || i===27 || i===28 || i===35){ %>
-            <div class="col">
-                <a href="#" target="_blank"><img src="images/<%= singleLi["pic"] %>"></a>
-            </div>
+        <% var singleLi=list[i]; %>
+        <% if (i%7===0){ %>
+        <div class="col">
+            <a href="#" target="_blank"><img src="images/<%= singleLi["pic"] %>"></a>
+        </div>
         <% } else {%>
         <div class="col">
             <a href="#" target="_blank"><img src="images/<%= singleLi["pic"] %>"></a>
@@ -163,56 +164,6 @@
     </script>
     <!-- 引入artTemplate模板引擎 -->
     <script src="js/template-native.js"></script>
-    <script>
-        //数据
-        var datas = {
-            //人像
-            list: [{ "pic": "renxiang.jpg" },
-                { "pic": "renxiang01.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renxiang02.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renxiang03.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renxiang04.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renxiang05.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renxiang06.jpg", "word": "梦境华，风吹草" },
-                //风光
-                { "pic": "fengguang.jpg" },
-                { "pic": "fengguang01.jpg", "word": "梦境华，风吹草" },
-                { "pic": "fengguang02.jpg", "word": "梦境华，风吹草" },
-                { "pic": "fengguang03.jpg", "word": "梦境华，风吹草" },
-                { "pic": "fengguang04.jpg", "word": "梦境华，风吹草" },
-                { "pic": "fengguang05.jpg", "word": "梦境华，风吹草" },
-                { "pic": "fengguang06.jpg", "word": "梦境华，风吹草" },
-                //人文
-                { "pic": "renwen.jpg" },
-                { "pic": "renwen01.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renwen02.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renwen03.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renwen04.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renwen05.jpg", "word": "梦境华，风吹草" },
-                { "pic": "renwen06.jpg", "word": "梦境华，风吹草" },
-                //生态
-                { "pic": "shengtai.jpg" },
-                { "pic": "shengtai01.jpg", "word": "梦境华，风吹草" },
-                { "pic": "shengtai02.jpg", "word": "梦境华，风吹草" },
-                { "pic": "shengtai03.jpg", "word": "梦境华，风吹草" },
-                { "pic": "shengtai04.jpg", "word": "梦境华，风吹草" },
-                { "pic": "shengtai05.jpg", "word": "梦境华，风吹草" },
-                { "pic": "shengtai06.jpg", "word": "梦境华，风吹草" },
-                //其他
-                { "pic": "qita.jpg" },
-                { "pic": "qita01.jpg", "word": "梦境华，风吹草" },
-                { "pic": "qita02.jpg", "word": "梦境华，风吹草" },
-                { "pic": "qita03.jpg", "word": "梦境华，风吹草" },
-                { "pic": "qita04.jpg", "word": "梦境华，风吹草" },
-                { "pic": "qita05.jpg", "word": "梦境华，风吹草" },
-                { "pic": "qita06.jpg", "word": "梦境华，风吹草" },
-                //更多
-                { "pic": "more.jpg" }]
-        };
-        var html = template('messages', datas);
-        $(".photolist .wrap").html(html);
-    </script>
-
 </div>
 <!-- 摄影作品欣赏-end -->
 <!-- 版心 -->
